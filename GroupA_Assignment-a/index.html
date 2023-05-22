@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <style>
+      main .card {
+        margin-bottom: 20px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+      integrity="sha512-0yYhCyiMB+6XOis4qvWA42kPkKb54+uMaOhbsta6m+aQ7cZOm5hzERPrRkkknlpEdoxVCwYui+yM0jRazpDFuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://demo.dashboardpack.com/architectui-html-free/main.css" rel="stylesheet"></head>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand " href="#">
+       
+       <h3 class=""> Admin Dashboard</h3> 
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+       
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+          <div
+            style="width: 250px; color: white !important"
+            class="offcanvas offcanvas-dark"
+            tabindex="-1"
+            id="sidebar"
+            aria-labelledby="sidebarLabel"
+          >
+            <div class="offcanvas-header">
+            
+              <button
+                type="button"
+                class="btn-close btn-close-white text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body p-0">
+              <nav class="navbar-dark   ">
+                <div class="d-flex flex-column flex-shrink-0 p-3">
+                  <a
+                    href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none"
+                  >
+                    <span class="fs-4">Dashboard</span>
+                  </a>
+                  <hr class="mb-0" />
+                  <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link active">
+                        <i class="bi bi-speedometer2 me-2"></i>Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link link-light">
+                        <i class="bi bi-person me-2"></i>Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link link-light">
+                        <i class="bi bi-file-earmark-text me-2"></i>Reports
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link link-light">
+                        <i class="bi bi-gear me-2"></i>Settings
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+  
+          <div class="app-main__outer">
+            <div class="app-main__inner">
+              <div class="row">
+                <div class="col-md-12 col-lg-6">
+                  <div class="mb-3 card">
+                    
+                    <div class="card-header-tab card-header-tab-animation card-header">
+                      <div class="card-header-title">
+                      
+                        Attendance
+                      </div>
+                      
+                    </div>
+                    <div class="card-body">
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="tabs-eg-77">
+                          <div class="card mb-3 widget-chart widget-chart2 text-left w-100">
+                            <div class="widget-chat-wrapper-outer">
+                              <div class="widget-chart-wrapper widget-chart-wrapper-lg opacity-10 m-0">
+                                <canvas id="canvas"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <div class="mb-3 card">
+                    <div class="card-header-tab card-header">
+                      <div class="card-header-title">
+                       
+                        Marks 
+                      </div>
+                     
+                    </div>
+                    <div class="tab-content ">
+                      <div class="tab-pane fade active show" id="tab-eg-55">
+                        <div class="widget-chart p-3">
+                          <div style="height: 300px">
+                            <canvas id="line-chart"></canvas>
+                          </div>
+                        </div>
+                        <div class="pt-2 card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="widget-content">
+                                <div class="widget-content-outer">
+                                  <div class="widget-content-wrapper">
+                                    <div class="widget-content-left">
+                                      <div class="widget-numbers fsize-3 text-muted">
+                                        63%
+                                      </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                      <div class="text-muted opacity-6">
+                                        6-7 SGPA
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="widget-progress-wrapper mt-1">
+                                    <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                      <div
+                                        class="progress-bar bg-danger"
+                                        role="progressbar"
+                                        aria-valuenow="63"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        style="width: 63%;"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="widget-content">
+                                <div class="widget-content-outer">
+                                  <div class="widget-content-wrapper">
+                                    <div class="widget-content-left">
+                                      <div class="widget-numbers fsize-3 text-muted">
+                                        32%
+                                      </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                      <div class="text-muted opacity-6">
+                                        8-10 SGPA
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="widget-progress-wrapper mt-1">
+                                    <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                      <div
+                                        class="progress-bar bg-success"
+                                        role="progressbar"
+                                        aria-valuenow="32"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        style="width: 32%;"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="widget-content">
+                                <div class="widget-content-outer">
+                                  <div class="widget-content-wrapper">
+                                    <div class="widget-content-left">
+                                      <div class="widget-numbers fsize-3 text-muted">
+                                        71%
+                                      </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                      <div class="text-muted opacity-6">
+                                        5-6 SGPA
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="widget-progress-wrapper mt-1">
+                                    <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                      <div
+                                        class="progress-bar bg-primary"
+                                        role="progressbar"
+                                        aria-valuenow="71"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        style="width: 71%;"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="widget-content">
+                                <div class="widget-content-outer">
+                                  <div class="widget-content-wrapper">
+                                    <div class="widget-content-left">
+                                      <div class="widget-numbers fsize-3 text-muted">
+                                        41%
+                                      </div>
+                                    </div>
+                                    <div class="widget-content-right">
+                                      <div class="text-muted opacity-6">
+                                        4-5 SGPA
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="widget-progress-wrapper mt-1">
+                                    <div class="progress-bar-sm progress-bar-animated-alt progress">
+                                      <div
+                                        class="progress-bar bg-warning"
+                                        role="progressbar"
+                                        aria-valuenow="41"
+                                        aria-valuemin="0"
+                                        aria-valuemax="100"
+                                        style="width: 41%;"
+                                      ></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://demo.dashboardpack.com/architectui-html-free/assets/scripts/main.js"></script></body>
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+-->
+  </body>
+</html>
