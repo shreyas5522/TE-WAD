@@ -6,12 +6,12 @@ To set up Node.js and Express.js for your project, follow these steps:
 
 2. Create a new directory for your project: Open the Node.js command terminal and navigate to the location where you want to create your project. Use the following commands:
    
-'mkdir your-project-name'
-'cd your-project-name'
+       mkdir your-project-name
+       cd your-project-name
 
 3. Initialize a new Node project: Run the following command to initialize a new Node project with default settings:
 
-'npm init -y'
+       npm init -y
 
 4. Create your entry file: Create a file named `index.js` in your project directory. This will be your Express server file.
 
@@ -69,5 +69,5 @@ Make sure to download the shark.png image and store it in the public directory.
 
 10. Running your project: In the terminal, navigate to your project directory and run the following command to start your Express server:
 
-'npm start'
+       npm start
 
