@@ -1,0 +1,99 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Assignment 3b crud",
+    "dateExported": "2023-03-27T14:01:34.810Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0724be83-377c-49b5-a695-b8394c620309",
+            "colId": "667eea76-1a71-4d79-ae4c-cefad1ea1b10",
+            "containerId": "",
+            "name": "create user",
+            "url": "localhost:3000/user/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-27T05:34:26.890Z",
+            "modified": "2023-03-27T13:17:20.603Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"dummy2@gmail.com\",\n  \"firstName\":\"dummy entry 2\",\n  \"lastName\":\"none\",\n  \"phone\":\"4785645478\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "206341b7-e2d2-4b7b-9512-cd5f8ccad14d",
+            "colId": "667eea76-1a71-4d79-ae4c-cefad1ea1b10",
+            "containerId": "",
+            "name": "Get a user",
+            "url": "localhost:3000/user/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-27T10:40:35.996Z",
+            "modified": "2023-03-27T10:40:48.072Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "78491e7d-d477-4cb9-99cf-d10142584685",
+            "colId": "667eea76-1a71-4d79-ae4c-cefad1ea1b10",
+            "containerId": "",
+            "name": "Update a user",
+            "url": "localhost:3000/user/6421724bac453a187acd9be3",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2023-03-27T10:41:48.219Z",
+            "modified": "2023-03-27T13:30:54.990Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\":\"Gaurav Updated2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6cbeff36-066c-462f-9a43-e242edc52797",
+            "colId": "667eea76-1a71-4d79-ae4c-cefad1ea1b10",
+            "containerId": "",
+            "name": "Delete a User",
+            "url": "localhost:3000/user/64217296d62ea4bad26ee25d",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-03-27T10:43:55.614Z",
+            "modified": "2023-03-27T13:33:48.860Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "564012b7-2ce1-41bd-be84-56dcb8af14d0",
+            "colId": "667eea76-1a71-4d79-ae4c-cefad1ea1b10",
+            "containerId": "",
+            "name": "Get user by Id",
+            "url": "localhost:3000/user/6421724bac453a187acd9be3",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-27T10:48:11.128Z",
+            "modified": "2023-03-27T13:26:33.365Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
