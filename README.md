@@ -8,7 +8,7 @@
 
 | Assignment No. | Problem Statement  |
 | :--------------:  | :-------------- |
-|[Assignment1-A](Group1_Assignment-a)| Create a responsive web page which shows the ecommerce/college/exam admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.| 
+|[Assignment 1-A](Group1_Assignment-a)| Create a responsive web page which shows the ecommerce/college/exam admin dashboard with sidebar and statistics in cards using HTML, CSS and Bootstrap.| 
 |[Assignment 1-B](Group1_Assignment-b)| Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX POST method and data list in new page.|
 |[Assignment 2-A](Group2_Assignment-a)| Create version control account on GitHub and using Git commands to create repository and push your code to GitHub. |
 |[Assignment 2-B](Group2_Assignment-a)| Create Docker Container Environment.|
