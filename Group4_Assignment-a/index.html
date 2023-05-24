@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Mobile Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Welcome to My Mobile Website</h1>
+        </div>
+        <div data-role="content">
+            <p>This is a simple mobile website built with jQuery Mobile.</p>
+            <a href="#about" data-role="button" data-icon="info">About</a>
+            <a href="#contact" data-role="button" data-icon="mail">Contact</a>
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>About</h1>
+        </div>
+        <div data-role="content">
+            <p>This is the About page of my mobile website.</p>
+            <a href="#home" data-role="button" data-icon="home">Home</a>
+            <a href="#contact" data-role="button" data-icon="mail">Contact</a>
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>Contact</h1>
+        </div>
+        <div data-role="content">
+            <p>This is the Contact page of my mobile website.</p>
+            <a href="#home" data-role="button" data-icon="home">Home</a>
+            <a href="#about" data-role="button" data-icon="info">About</a>
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+</body>
+</html>
